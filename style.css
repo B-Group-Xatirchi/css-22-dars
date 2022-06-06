@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  padding: 2rem 0;
+}
+
+.container > h1 {
+  font-size: 5rem;
+  margin: 1rem 0;
+  color: #90CE51;
+  font-family: 'Baumans', cursive;
+}
+
+.box__container {
+  width: 920px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box__container > div {
+  width: calc(100%/6 - 7px);
+  height: 400px;
+  background: #dfdfdf;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.box__container > div > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  flex: 33%;
+  display: flex;
+  align-items: center;
+}
+
+.box__container > div > div {
+  flex: 67%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box__container > div > div > div {
+  font-size: 12px;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outside > div > div {
+  height: calc(100%/2 - 10px);
+  border-radius: 0.7rem;
+  background: #a79c8a;
+}
+
+.outside > div > div:first-child {
+  background: #a5a5a5;
+}
+
+.inside > div > div {
+  height: calc(100%/3 - 8px);
+  border-radius: 0.5rem;
+  background: #af8b4d;
+}
+
+.inside > div > div:first-child {
+  background: #ab9468;
+}
+
+.inside > div > div:last-child {
+  background: #ab8435;
+}
+
+.list-item > div > div {
+  height: 100%;
+  border-radius: 0.7rem;
+  background: #ad7c1d;
+}
+
+.internal > div > div {
+  height: calc(100%/8 - 5px);
+  border-radius: 0.2rem;
+  background: #ac7206;
+}
+
+.internal > div > div:nth-child(2) {
+  background: #a26b06;
+}
+.internal > div > div:nth-child(3) {
+  background: #A56605;
+}
+.internal > div > div:nth-child(4) {
+  background: #AE5908;
+}
+.internal > div > div:nth-child(5) {
+  background: #AF5A00;
+}
+.internal > div > div:nth-child(6) {
+  background: #A75503;
+}
+.internal > div > div:nth-child(7) {
+  background: #A94A01;
+}
+.internal > div > div:nth-child(8) {
+  background: #AF4A04;
+}
+
+.box > div > div {
+  height: 100%;
+  border-radius: 0.7rem;
+  background: #B14101;
+}
+
+.legacy > div > div {
+  height: calc(100%/3 - 8px);
+  border-radius: 0.5rem;
+  background: #B13801;
+}
+
+.legacy > div > div:first-child {
+  background: #B23B01;
+}
+
+.legacy > div > div:last-child {
+  background: #B53301;
+}
+
+
+@media (max-width: 1080px) {
+  .box__container {
+    width: 460px;
+  }
+  .box__container > div {
+    width: calc(100%/3 - 7px);
+    margin-bottom: 2rem;
+  }
+}
